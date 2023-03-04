@@ -44,7 +44,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_i_simulacija_p_r/">Моделирање и симулација пом. рач. шк. 2021/22.</a>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_i_simulacija_p_r/">Моделирање и симулације пом. рач. шк. 2021/22.</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_izborni/">Моделирање и симулација пом. рач. - изб. пр.</a>
@@ -74,7 +74,7 @@
         <h1>Моделирање и симулација помоћу рачунара шк. 2022/23. год.</h1>
         <div class="row justify-content-center">
           <div class="col-12 col-sm-12 col-md-11 col-lg-10">
-            <ul class="nav nav-tabs" id="mpr_tab" role="tablist">
+            <ul class="nav nav-tabs" id="mispr_tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="m_st_mas_el-tab" data-bs-toggle="tab" data-bs-target="#m_st_mas_el" type="button" role="tab" aria-controls="m_st_mas_el" aria-selected="true">Стандардни маш. ел.</button>
               </li>
@@ -82,7 +82,7 @@
                 <button class="nav-link" id="m_prenosnika-tab" data-bs-toggle="tab" data-bs-target="#m_prenosnika" type="button" role="tab" aria-controls="m_prenosnika" aria-selected="true">Преносници снаге</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link disabled" id="mpr3-tab" data-bs-toggle="tab" data-bs-target="#mpr3" type="button" role="tab" aria-controls="mpr3" aria-selected="true">Зупчасти преносници</button>
+                <button class="nav-link" id="m_zupcastih_prenosnika-tab" data-bs-toggle="tab" data-bs-target="#m_zupcastih_prenosnika" type="button" role="tab" aria-controls="m_zupcastih_prenosnika" aria-selected="true">Зупчасти преносници</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link disabled" id="sloz_skl_i_te_dok-tab" data-bs-toggle="tab" data-bs-target="#sloz_skl_i_te_dok" type="button" role="tab" aria-controls="sloz_skl_i_te_dok" aria-selected="true">Сложенији склопови</button>
@@ -91,7 +91,7 @@
                 <button class="nav-link" id="mali_dodatak-tab" data-bs-toggle="tab" data-bs-target="#mali_dodatak" type="button" role="tab" aria-controls="mali_dodatak" aria-selected="true">Мали додатак</button>
               </li>
             </ul>
-            <div class="tab-content" id="mpr_TabContent">
+            <div class="tab-content" id="mispr_TabContent">
               <div class="tab-pane show active" id="m_st_mas_el" role="tabpanel" aria-labelledby="m_st_mas_el-tab">
                 <div class="accordion" id="m_st_mas_el_pregled">
                   <div class="accordion-item">
@@ -341,13 +341,90 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane" id="mpr3" role="tabpanel" aria-labelledby="mpr3-tab">
-                <div class="accordion" id="mpr3_pregled">
-                  TODO
+              <div class="tab-pane" id="m_zupcastih_prenosnika" role="tabpanel" aria-labelledby="m_zupcastih_prenosnika-tab">
+                <div class="accordion" id="m__zupcastih_prenosnika_pregled">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="puzni_par">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_puzni_par" aria-expanded="true" aria-controls="collapse_puzni_par">
+                        Пужни пар
+                      </button>
+                    </h2>
+                    <div id="collapse_puzni_par" class="accordion-collapse collapse show" aria-labelledby="puzni_par" data-bs-parent="#m__zupcastih_prenosnika_pregled">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="puzni_par_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Arhimedov_puz-tab" data-bs-toggle="tab" data-bs-target="#Arhimedov_puz" type="button" role="tab" aria-controls="Arhimedov_puz" aria-selected="true">Моделирање Архимедовог пужа</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Puzni_zupcanik_modeliranje-tab" data-bs-toggle="tab" data-bs-target="#Puzni_zupcanik_modeliranje" type="button" role="tab" aria-controls="Puzni_zupcanik_modeliranje" aria-selected="true">Моделирање пужног зупчаника</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Puzni_par_animacija-tab" data-bs-toggle="tab" data-bs-target="#Puzni_par_animacija" type="button" role="tab" aria-controls="Puzni_par_animacija" aria-selected="true">Анимација редуктора</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="puzni_par_TabContent">
+                          <div class="tab-pane show active" id="Arhimedov_puz" role="tabpanel" aria-labelledby="Arhimedov_puz-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/c8Z4WzheFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="Puzni_zupcanik_modeliranje" role="tabpanel" aria-labelledby="Puzni_zupcanik_modeliranje-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/4thSMePaWWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="Puzni_par_animacija" role="tabpanel" aria-labelledby="Puzni_par_animacija-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/tRBTJswJO3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="FEM_analiza">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_FEM_analiza" aria-expanded="true" aria-controls="collapse_FEM_analiza">
+                        "FEM" анализе цилиндричних зупчаника са завојним зупцима:
+                      </button>
+                    </h2>
+                    <div id="collapse_FEM_analiza" class="accordion-collapse collapse" aria-labelledby="FEM_analiza" data-bs-parent="#m__zupcastih_prenosnika_pregled">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="FEM_analize_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Static_contact_linearna_analiza-tab" data-bs-toggle="tab" data-bs-target="#Static_contact_linearna_analiza" type="button" role="tab" aria-controls="Static_contact_linearna_analiza" aria-selected="true">"Static contact"</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Nonlinear_contact-tab" data-bs-toggle="tab" data-bs-target="#Nonlinear_contact" type="button" role="tab" aria-controls="Nonlinear_contact" aria-selected="true">"Nonlinear contact"</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Plasticicty_von_Mises-tab" data-bs-toggle="tab" data-bs-target="#Plasticicty_von_Mises" type="button" role="tab" aria-controls="Plasticicty_von_Mises" aria-selected="true">"Plasticity von Mises"</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="FEM_analize_TabContent">
+                          <div class="tab-pane show active" id="Static_contact_linearna_analiza" role="tabpanel" aria-labelledby="Static_contact_linearna_analiza-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/T2tJ1c3eJ8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="Nonlinear_contact" role="tabpanel" aria-labelledby="Nonlinear_contact-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/B1MEJuuFtzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="Plasticicty_von_Mises" role="tabpanel" aria-labelledby="Plasticicty_von_Mises-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/9M3W0b0dBek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="tab-pane" id="sloz_skl_i_te_dok" role="tabpanel" aria-labelledby="sloz_skl_i_te_dok-tab">
-                <div class="accordion" id="zupcasti_prenosnici_pregled">
+                <div class="accordion" id="sloz_skl_i_te_dok_pregled">
                   TODO
                 </div>
               </div>
